@@ -6,44 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">  
+  </head>
 <body>
-    <div class="container">
-        <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="acacia.html" class="nav-link">Acacia</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">COLORS</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Singles</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          </ul>
-        </header>
+    <header>
+      <div class="logo">
+        <img src="../images/logo.png" alt = "">
       </div>
-      <div class="container text-center justify-content-center align-items-center">
-        <div class="row">
-          <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
-          style="background-image: url('../images/DSC06354.jpg'); height: 100vh">
-          <div>
-            <h1 class="mb-3 h2">VINNI</h1>
-            <p> <em>Composer, Producer, Musician</em></p>
-          </div>
-          </div>
+      <button class="nav-toggle" aria-label="toggle nav">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class = "nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Discography</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!---intro section-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hello! Welcome to <strong><b>VINNI</b></strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Composer, Musician 
+      </p>
+      <img src="../images/headshot.jpg" alt = "headshot" class = "intro__img">
+    </section>
+    <!---services section-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">Discography</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Acacia</h3>
+            <ul class = "service__list">
+              <li class = "service__item">Acacia</li>
+              <li class = "service__item"></li>Scorio</li>
+              <li class = "service__item"></li>Sardis</li>
+              <li class = "service__item"></li>Waltz for JJ</li>
+              <li class = "service__item"></li>Tetran</li>
+              <li class = "service__item"></li>Tambouret</li>
+            </ul>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="../images/DSC06341.jpg" class = "img-fluid"/>
-          </div>
-          <div class="col">
-            <div class = "justify-content-center align-items-center">
-              <p>
-                Jazz saxophonist, classical pianist, and singer VINNI (Vincent Le) was born and raised in Los Angeles before moving to New York City to complete his bachelors in music at Columbia University.
-              </p>
-            </div>
-          </div>
+        <div class="service">
+          <h3>COLORS Project</h3>
+            <ul class = "service__list">
+              <li class = "service__item">BLUE</li>
+              <li class = "service__item"></li>RED</li>
+              <li class = "service__item"></li>GREEN</li>
+              <li class = "service__item"></li>VIOLET</li>
+              <li class = "service__item"></li>YELLOW</li>
+              <li class = "service__item"></li>ORANGE</li>
+            </ul>
+        </div>
+        <div class="service">
+          <h3>Singles</h3>
+            <ul class = "service__list">
+              <li class = "service__item">Dreamin'</li>
+              <li class = "service__item"></li>a long and lonely minute</li>
+              <li class = "service__item"></li>Stood Up</li>
+              <li class = "service__item"></li>TIME</li>
+              <li class = "service__item"></li>STAND</li>
+            </ul>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </section>
+    <!---about me section-->
+    <section class="about-me" id="about">
+      <h2 class = "section__title section__title--about">About Me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Composer & Musician based in NYC
+      </p>
+      <div class="about-me__body">
+        <p>LA born, NYC based VINNI is a producer, composer, singer,
+          pianist, and jazz saxophonist. He began experimenting as a music major
+          studying at Columbia University, where he composed, performed and produced his first full length jazz album
+          entitled "Acacia" in 2019. He then went on to compose and produce a six movement
+        classical chamber music album entitled the "COLORS project" in 2020, naming the pieces after
+      the primary and secondary colors.</p>
+        <p>VINNI's latest singles focus on producing alternative lo fi beats
+          underneath reflective and contemplative lyrics on the human experience. Inspired by artists such as keshi, HONNE, Lauv, VINNI attempts to grapple with the
+          tribulations of young love, loss, and identity. His music explores the raw
+          emotions stemming from the pain and grief behind having to accept and
+          let go of a loved one. While everyone has their own interpretation of
+          love and loss, VINNI hopes to convey a small facet of his experience
+          that any listener can relate to. </p>
+      </div>
+      <img src="../images/kicking.jpg" alt = "kicking" class ="about-me__img">
+    </section>
+    <!---my work section-->
+    <section class="my-work" id="work">
+      <h2 class = "section__title">My Work</h2>
+      <p class = "section__subtitle"></p>
+      <div class="portfolio">
+        <a href = "#" class="portfolio__item">
+          <img src="#" alt ="" class="portfolio__img">
+        </a>
+      </div>
+    </section>
+    <!---footer section-->
+    <footer>
+      <a href="mailto:vincentlemusic@gmail.com" class="footer-link">vincentlemusic@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list___link">a</a></li>
+        <li class="social-list__item"><a class="social-list___link">b</a></li>
+        <li class="social-list__item"><a class="social-list___link">c</a></li>
+        <li class="social-list__item"><a class="social-list___link">d</a></li>
+      </ul>
+    </footer>
+    <script src = "script.js"></script>
 </body>
 </html>
