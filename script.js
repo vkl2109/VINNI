@@ -1,9 +1,12 @@
-let head = document.getElementById("head1");
-let headtxt = document.getElementById("headtxt");
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav__link');
 
-window.addEventListener('scroll', function(){
-    var value = window.scrollY;
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+})
 
-    head.style.top = value * 1 + 'px';
-    headtxt.style.top = -value * 2 + 'px';
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
 })
